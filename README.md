@@ -127,37 +127,6 @@ The app opens at `http://localhost:3000`.
 
 ---
 
-## 🔌 API Overview
-
-| Route prefix       | Purpose |
-|--------------------|---------|
-| `/api/foods`       | List, search, filter by tag, and (admin) create / update / delete foods |
-| `/api/users`       | Login, register, update profile, change password, and (admin) manage users |
-| `/api/orders`      | Create, pay, track, and list orders |
-| `/api/upload`      | Upload images to Cloudinary (admin) |
-
-Protected routes expect a JWT in the request header, issued at login.
-
----
-
-## 🌐 Frontend Routes
-
-| Path | Page |
-|------|------|
-| `/` | Home (menu) |
-| `/search/:searchTerm`, `/tag/:tag` | Filtered menu |
-| `/food/:id` | Food details |
-| `/cart` | Cart |
-| `/login`, `/register` | Authentication |
-| `/checkout`, `/payment` | Checkout and PayPal payment |
-| `/track/:orderId` | Order tracking |
-| `/profile`, `/orders/:filter?` | Account and order history |
-| `/dashboard` | User / admin dashboard |
-| `/admin/foods`, `/admin/addFood`, `/admin/editFood/:foodId` | Food management (admin) |
-| `/admin/users`, `/admin/editUser/:userId` | User management (admin) |
-
----
-
 ## 📦 Order Statuses
 
 `NEW` → `PAYED` → `SHIPPED`, plus `CANCELED` and `REFUNDED`.
